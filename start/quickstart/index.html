@@ -1,0 +1,1545 @@
+
+<!doctype html>
+<html lang="zh" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      
+        <link rel="prev" href="../">
+      
+      
+        <link rel="next" href="../beforeps/">
+      
+      
+      <link rel="icon" href="../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.20">
+    
+    
+      
+        <title>快速上手 - 2024 级问题求解（程设部分）</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.e53b48f4.min.css">
+      
+        
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.06af60db.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Fira+Sans:300,300i,400,400i,700,700i%7CFira+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Fira Sans";--md-code-font:"Fira Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../../css/heimu.css">
+    
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="red">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#快速上手" class="md-skip">
+          跳转至
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow md-header--lifted" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="页眉">
+    <a href="../.." title="2024 级问题求解（程设部分）" class="md-header__button md-logo" aria-label="2024 级问题求解（程设部分）" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 3 1 9l11 6 9-4.91V17h2V9M5 13.18v4L12 21l7-3.82v-4L12 17z"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            2024 级问题求解（程设部分）
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              快速上手
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: light)" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="red"  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 7a5 5 0 0 1 5 5 5 5 0 0 1-5 5 5 5 0 0 1-5-5 5 5 0 0 1 5-5m0 2a3 3 0 0 0-3 3 3 3 0 0 0 3 3 3 3 0 0 0 3-3 3 3 0 0 0-3-3m0-7 2.39 3.42C13.65 5.15 12.84 5 12 5s-1.65.15-2.39.42zM3.34 7l4.16-.35A7.2 7.2 0 0 0 5.94 8.5c-.44.74-.69 1.5-.83 2.29zm.02 10 1.76-3.77a7.131 7.131 0 0 0 2.38 4.14zM20.65 7l-1.77 3.79a7.02 7.02 0 0 0-2.38-4.15zm-.01 10-4.14.36c.59-.51 1.12-1.14 1.54-1.86.42-.73.69-1.5.83-2.29zM12 22l-2.41-3.44c.74.27 1.55.44 2.41.44.82 0 1.63-.17 2.37-.44z"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: dark)" data-md-color-scheme="slate" data-md-color-primary="indigo" data-md-color-accent="blue"  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m17.75 4.09-2.53 1.94.91 3.06-2.63-1.81-2.63 1.81.91-3.06-2.53-1.94L12.44 4l1.06-3 1.06 3zm3.5 6.91-1.64 1.25.59 1.98-1.7-1.17-1.7 1.17.59-1.98L15.75 11l2.06-.05L18.5 9l.69 1.95zm-2.28 4.95c.83-.08 1.72 1.1 1.19 1.85-.32.45-.66.87-1.08 1.27C15.17 23 8.84 23 4.94 19.07c-3.91-3.9-3.91-10.24 0-14.14.4-.4.82-.76 1.27-1.08.75-.53 1.93.36 1.85 1.19-.27 2.86.69 5.83 2.89 8.02a9.96 9.96 0 0 0 8.02 2.89m-1.64 2.02a12.08 12.08 0 0 1-7.8-3.47c-2.17-2.19-3.33-5-3.49-7.82-2.81 3.14-2.7 7.96.31 10.98 3.02 3.01 7.84 3.12 10.98.31"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="搜索" placeholder="搜索" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="查找">
+        
+        <button type="reset" class="md-search__icon md-icon" title="清空当前内容" aria-label="清空当前内容" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            正在初始化搜索引擎
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+      <div class="md-header__source">
+        <a href="https://github.com/ps24-prog/ps-wiki" title="前往仓库" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.0.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M439.6 236.1 244 40.5c-5.4-5.5-12.8-8.5-20.4-8.5s-15 3-20.4 8.4L162.5 81l51.5 51.5c27.1-9.1 52.7 16.8 43.4 43.7l49.7 49.7c34.2-11.8 61.2 31 35.5 56.7-26.5 26.5-70.2-2.9-56-37.3L240.3 199v121.9c25.3 12.5 22.3 41.8 9.1 55-6.4 6.4-15.2 10.1-24.3 10.1s-17.8-3.6-24.3-10.1c-17.6-17.6-11.1-46.9 11.2-56v-123c-20.8-8.5-24.6-30.7-18.6-45L142.6 101 8.5 235.1C3 240.6 0 247.9 0 255.5s3 15 8.5 20.4l195.6 195.7c5.4 5.4 12.7 8.4 20.4 8.4s15-3 20.4-8.4l194.7-194.7c5.4-5.4 8.4-12.8 8.4-20.4s-3-15-8.4-20.4"/></svg>
+  </div>
+  <div class="md-source__repository">
+    ps-wiki
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+    
+      
+<nav class="md-tabs" aria-label="标签" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../.." class="md-tabs__link">
+          
+  
+  
+    
+  
+  主版
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../project/" class="md-tabs__link">
+          
+  
+  
+    
+  
+  项目
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    
+  
+  
+    
+    
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="../" class="md-tabs__link">
+          
+  
+  
+    
+  
+  指南
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../oj/" class="md-tabs__link">
+          
+  
+  
+    
+  
+  OJ
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../lab/" class="md-tabs__link">
+          
+  
+  
+    
+  
+  Lab
+
+        </a>
+      </li>
+    
+  
+
+      
+    </ul>
+  </div>
+</nav>
+    
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+  
+
+
+<nav class="md-nav md-nav--primary md-nav--lifted" aria-label="导航栏" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="2024 级问题求解（程设部分）" class="md-nav__button md-logo" aria-label="2024 级问题求解（程设部分）" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 3 1 9l11 6 9-4.91V17h2V9M5 13.18v4L12 21l7-3.82v-4L12 17z"/></svg>
+
+    </a>
+    2024 级问题求解（程设部分）
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/ps24-prog/ps-wiki" title="前往仓库" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.0.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M439.6 236.1 244 40.5c-5.4-5.5-12.8-8.5-20.4-8.5s-15 3-20.4 8.4L162.5 81l51.5 51.5c27.1-9.1 52.7 16.8 43.4 43.7l49.7 49.7c34.2-11.8 61.2 31 35.5 56.7-26.5 26.5-70.2-2.9-56-37.3L240.3 199v121.9c25.3 12.5 22.3 41.8 9.1 55-6.4 6.4-15.2 10.1-24.3 10.1s-17.8-3.6-24.3-10.1c-17.6-17.6-11.1-46.9 11.2-56v-123c-20.8-8.5-24.6-30.7-18.6-45L142.6 101 8.5 235.1C3 240.6 0 247.9 0 255.5s3 15 8.5 20.4l195.6 195.7c5.4 5.4 12.7 8.4 20.4 8.4s15-3 20.4-8.4l194.7-194.7c5.4-5.4 8.4-12.8 8.4-20.4s-3-15-8.4-20.4"/></svg>
+  </div>
+  <div class="md-source__repository">
+    ps-wiki
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_1" >
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../.." class="md-nav__link ">
+              
+  
+  
+  <span class="md-ellipsis">
+    主版
+    
+  </span>
+  
+
+            </a>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_1_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_1">
+            <span class="md-nav__icon md-icon"></span>
+            主版
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" >
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../project/" class="md-nav__link ">
+              
+  
+  
+  <span class="md-ellipsis">
+    项目
+    
+  </span>
+  
+
+            </a>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            项目
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+        
+        
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" checked>
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../" class="md-nav__link ">
+              
+  
+  
+  <span class="md-ellipsis">
+    指南
+    
+  </span>
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_3" id="__nav_3_label" tabindex="">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            指南
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    快速上手
+    
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    快速上手
+    
+  </span>
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="目录">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      目录
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#环境配置" class="md-nav__link">
+    <span class="md-ellipsis">
+      环境配置
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="环境配置">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#msys2-简介" class="md-nav__link">
+    <span class="md-ellipsis">
+      MSYS2 简介
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#安装-msys2" class="md-nav__link">
+    <span class="md-ellipsis">
+      安装 MSYS2
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#将-msys2-的程序目录配置到环境变量" class="md-nav__link">
+    <span class="md-ellipsis">
+      将 MSYS2 的程序目录配置到环境变量
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#将-msys2-配置到-windows-终端" class="md-nav__link">
+    <span class="md-ellipsis">
+      将 MSYS2 配置到 Windows 终端
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#将-msys2-配置到-vscode-终端" class="md-nav__link">
+    <span class="md-ellipsis">
+      将 MSYS2 配置到 VSCode 终端
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#用-pacman-安装工具" class="md-nav__link">
+    <span class="md-ellipsis">
+      用 pacman 安装工具
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#上手实验" class="md-nav__link">
+    <span class="md-ellipsis">
+      上手实验
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="上手实验">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#编译和运行程序" class="md-nav__link">
+    <span class="md-ellipsis">
+      编译和运行程序
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../beforeps/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    写在问求之前
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../code-style/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    代码风格
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_5" >
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../program/" class="md-nav__link ">
+              
+  
+  
+  <span class="md-ellipsis">
+    程序设计基础
+    
+  </span>
+  
+
+            </a>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_5_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_5">
+            <span class="md-nav__icon md-icon"></span>
+            程序设计基础
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../theory/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    理论环境配置
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../oj/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    OJ使用教程
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../learn-more/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    资源聚集处
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" >
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../oj/" class="md-nav__link ">
+              
+  
+  
+  <span class="md-ellipsis">
+    OJ
+    
+  </span>
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_4" id="__nav_4_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4">
+            <span class="md-nav__icon md-icon"></span>
+            OJ
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4_2" >
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../oj/ps1/" class="md-nav__link ">
+              
+  
+  
+  <span class="md-ellipsis">
+    第一学期
+    
+  </span>
+  
+
+            </a>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_4_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4_2">
+            <span class="md-nav__icon md-icon"></span>
+            第一学期
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5" >
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../lab/" class="md-nav__link ">
+              
+  
+  
+  <span class="md-ellipsis">
+    Lab
+    
+  </span>
+  
+
+            </a>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_5">
+            <span class="md-nav__icon md-icon"></span>
+            Lab
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="目录">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      目录
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#环境配置" class="md-nav__link">
+    <span class="md-ellipsis">
+      环境配置
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="环境配置">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#msys2-简介" class="md-nav__link">
+    <span class="md-ellipsis">
+      MSYS2 简介
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#安装-msys2" class="md-nav__link">
+    <span class="md-ellipsis">
+      安装 MSYS2
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#将-msys2-的程序目录配置到环境变量" class="md-nav__link">
+    <span class="md-ellipsis">
+      将 MSYS2 的程序目录配置到环境变量
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#将-msys2-配置到-windows-终端" class="md-nav__link">
+    <span class="md-ellipsis">
+      将 MSYS2 配置到 Windows 终端
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#将-msys2-配置到-vscode-终端" class="md-nav__link">
+    <span class="md-ellipsis">
+      将 MSYS2 配置到 VSCode 终端
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#用-pacman-安装工具" class="md-nav__link">
+    <span class="md-ellipsis">
+      用 pacman 安装工具
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#上手实验" class="md-nav__link">
+    <span class="md-ellipsis">
+      上手实验
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="上手实验">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#编译和运行程序" class="md-nav__link">
+    <span class="md-ellipsis">
+      编译和运行程序
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+  
+  
+
+
+<h1 id="快速上手">快速上手<a class="headerlink" href="#快速上手" title="Permanent link">&para;</a></h1>
+<p>以下将简要介绍问题求解编程实验的上手流程。</p>
+<div class="admonition info">
+<p class="admonition-title">Unix Shell 环境</p>
+<p>从 2023 级开始，问题求解编程部分的实验要求在 Unix Shell 环境下完成。这是为了让大家在面对此后将修读的《计算机系统基础》《操作系统》等课程的实验时有一定的 Shell 使用基础，能够更好的生存下来。</p>
+</div>
+<div class="admonition warning">
+<p class="admonition-title">Windows XP/Vista/7/8/8.1 用户请注意</p>
+<p>微软已经终止了对 Windows XP/Vista/7/8/8.1 的支持，因此本讲义可能涉及的 Windows 系统的较新软件、特性可能在这些系统上不可用。</p>
+<p>如果你正在使用这些版本的 Windows，请尝试升级至 Windows 10 或更新的 Windows 版本。如果你的电脑不支持新版 Windows，请尝试（但不限于）用其他方式配置所需环境，更换更新的电脑，安装 Linux 发行版，手动安装 Windows 功能，使用虚拟机运行新版 Windows 等方法。</p>
+<p>如果你正在使用更老的 Windows 版本作为工作环境，请务必更换操作系统或设备。</p>
+</div>
+<div class="admonition warning">
+<p class="admonition-title">MacOS 用户请注意</p>
+<p>笔者从未使用过 MacOS，所以并不了解 MacOS 如何配置必须的环境，请自行阅读<a href="https://sourabhbajaj.com/mac-setup/">相关教程</a>。</p>
+<p>另外针对 MacOS 用户需要提醒的是，若你未来计划修读课程《数字逻辑与计算机组成实验》，则可能需要准备一台 Windows/Linux 备用机以安装所需的 Vivado 软件。</p>
+<p>但后续课程实验将尽力提供对于 MacOS 环境的兼容性（会在 MacBook 上进行测试）。</p>
+</div>
+<div class="admonition note">
+<p class="admonition-title">阅读前声明</p>
+<p>工欲善其事，必先利其器。环境配置并不是「装好软件」那么简单的事情，它本身就是一种「计算机工程」。因此就需要考虑各个工具之间的相合性，环境的维护难度，后续的拓展性等等。一个例子是 <a href="https://en.wikipedia.org/wiki/NixOS">NixOS</a>。</p>
+<p>从广义上，环境是基础设施的一种，好的基础设施意味着高效率。<a href="https://nju-projectn.github.io/ics-pa-gitbook/ics2022/1.4.html">PA 讲义</a>中仔细阐述了这一点。</p>
+<p>因此，在介绍配置环境的过程中我们会不断介绍一些工具或环境的背景知识，告诉你我们选择它而不是其他工具的考量，为你提供多种选择，希望为你带来一些启发。并希望你能了解「环境是怎么配置起来的」而不是仅仅 follow the step one by one。</p>
+<p>但是我们很清楚，修读《问题求解》课程的学生群体是多样化的。如果你完全不懂计算机，那么本文也提供了配置好环境的保姆级教程。如果对文中的部分背景知识感到十分困惑，大可以跳过。同时，如果你对文中一些过于基础的补充框感到厌烦，也可以跳过它们。</p>
+<p>当然，笔者不是什么专家抑或极客，也是百度上东搜一个软件西查一个软件过来的，你可以批判看待我的经验之谈。</p>
+</div>
+<h2 id="环境配置">环境配置<a class="headerlink" href="#环境配置" title="Permanent link">&para;</a></h2>
+<h3 id="msys2-简介">MSYS2 简介<a class="headerlink" href="#msys2-简介" title="Permanent link">&para;</a></h3>
+<div class="admonition quote">
+<p class="admonition-title">一言</p>
+<p>All problems in computer science can be solved by another level of indirection.<br/>
+（计算机科学领域的所有问题都可以通过增加一个中间层解决）
+<div style="text-align:right"> —— David Wheeler </div></p>
+</div>
+<p>MSYS2 基于 Cygwin，Cygwin 最早是一套使用 GCC 交叉编译出符合 Windows 可执行文件格式的程序的工具链（使用和 Linux 平台同一份或者经过少许修改的 C 源码）。同时，为了使用起来更为方便，Cygwin 同时移植了 Unix Shell 环境和大量的 Unix 命令行工具。Shell 环境和许多命令行工具需要 Linux 系统调用（如 <code>fork()</code> 等），因此 Cygwin 还开发了把 Linux 系统调用「翻译」为 Windows 系统调用的兼容层。</p>
+<p>MSYS2 区别于 Cygwin 的地方是它更重视 MINGW (Minimalist GNU for Windows)，这是一套返璞归真的工具链。说它返璞归真，是因为它试图完全不依赖额外的兼容层，直接由 GCC 生成 Windows 目标平台的可执行文件（当然，它只能通过 <code>windows.h</code> 调用 WIN32 API）。</p>
+<p>MSYS2 重写了 MSYS，而后者最初就是为了为使用 Mingw 提供一个 Unix 环境和与之匹配的工具箱。当然，这实际上就是 Cygwin 所做的事情，因此 MSYS2 继承了这一部分。不过二者的目的不同：MSYS 除了基础环境外，主要使用和生成不依赖 Cygwin 兼容层的 Mingw 的二进制包。</p>
+<p>如果你用过 Git for Windows，那么你可能就见过 MSYS2 环境，因为它的类 bash 环境就是用 MSYS2 实现的。</p>
+<p>注意：<strong>MSYS2 不是虚拟机</strong>，它没有自己的内核。</p>
+<h3 id="安装-msys2">安装 MSYS2<a class="headerlink" href="#安装-msys2" title="Permanent link">&para;</a></h3>
+<div class="admonition info">
+<p class="admonition-title">Linux 用户请注意</p>
+<p>若你使用 Linux 发行版，则不需要安装 MSYS2。</p>
+</div>
+<details class="question" open="open">
+<summary>为什么不使用自带的命令行工具 <code>cmd</code> 或 <code>powershell</code>？</summary>
+<p>因为这些命令行工具承自 MS-DOS，具有不同于 Unix Shell 的语法和各种实用程序。你们此后的大部分课程实验都将是在 Linux 环境下进行的，因此使用 Unix Shell 可以更好地为你们将来的课程打下基础。</p>
+</details>
+<details class="question" open="open">
+<summary>为什么使用 MSYS2 而非 WSL 等？</summary>
+<p>MSYS2 在 Windows 原生地（而非使用虚拟机）提供了一个 Unix Shell 环境，原生就是一种好处。</p>
+<p>这意味着你在 Windows 可以无障碍的使用 MSYS2 提供的大量工具以及可以通过包管理器从仓库安装的大量实用软件和库，如 ffmpeg, tex live, qt, verilator 等等。反过来，你在 MSYS2 环境中也同样可以使用 Windows 命令行工具，这提供了不小的便利。</p>
+<p>使用 WSL 也不失为一种好选择，但这样我们就将你视作 Linux 用户。</p>
+</details>
+<p>首先从<a href="https://www.msys2.org/">官网</a>或者<a href="https://mirror.nju.edu.cn/mirrorz-help/msys2/?mirror=NJU">南大镜像源</a>下载 MSYS2 安装包并安装。</p>
+<h3 id="将-msys2-的程序目录配置到环境变量">将 MSYS2 的程序目录配置到环境变量<a class="headerlink" href="#将-msys2-的程序目录配置到环境变量" title="Permanent link">&para;</a></h3>
+<div class="admonition info">
+<p class="admonition-title">使用 Windows 10 或更新的操作系统</p>
+<p>Windows 10 的搜索功能可以极大的减轻你的思维和操作负担。</p>
+<p>如果你还在因为各种原因用更老的操作系统，那么是时候升级了——世道必进，后胜于今。</p>
+</div>
+<p>使用 <code>Win+S</code> 唤出搜索菜单，键入环境变量一词，选择第一个候选项。在新出现的页面中，在 <code>PATH</code> 中添加 <code>$MSYS2_PATH\usr\bin</code> 和 <code>$MSYS2_PATH\mingw64\bin</code>，这样就可以在 MSYS2 环境以外使用 MSYS2 环境中的工具了。</p>
+<div class="admonition tip">
+<p class="admonition-title">替换 <code>$MSYS2_PATH</code></p>
+<p>这是一个变量，代指你 MSYS2 安装的路径。<strong>这个变量仅在文档中存在，你应该把它替换为你的 MSYS2 安装路径</strong>。</p>
+<p>计算机领域的文档经常出现这样的表达，使用变量的原因是每个人具体的配置不同。</p>
+</div>
+<details class="question" open="open">
+<summary>什么是 <code>PATH</code> 环境变量？</summary>
+<p>环境变量是指在程序运行时存在的一些「背景信息」。</p>
+<p><code>PATH</code> 告诉 Shell 程序所需的二进制文件可能出现的位置。</p>
+</details>
+<details class="question" open="open">
+<summary>为什么有两个二进制目录？</summary>
+<p><code>$MSYS2_PATH\usr\bin</code> 是那些 Cygwin 环境才可以运行的（使用 Unix 系统调用）的软件包的安装处，<code>$MSYS2_PATH\mingw64\bin</code> 是 mingw 构建的软件包的安装处。</p>
+</details>
+<details class="question" open="open">
+<summary>我设置了环境变量，但是变化没有生效啊？</summary>
+<p>请确认你是否保存了所有修改并退出了所有菜单，并重启所有的终端。</p>
+<p>环境变量是在程序加载启动时赋予的，修改环境变量不会影响正在运行的程序。</p>
+</details>
+<h3 id="将-msys2-配置到-windows-终端">将 MSYS2 配置到 Windows 终端<a class="headerlink" href="#将-msys2-配置到-windows-终端" title="Permanent link">&para;</a></h3>
+<p>Windows 终端是微软推出的全新一代、功能更加完善的终端。</p>
+<p>我们假定所有使用 Windows 平台的读者都已经安装了 Windows 终端。</p>
+<details class="question" open="open">
+<summary>可以不用 Windows 终端吗？</summary>
+<p>可以。但是它默认支持虚拟终端控制序列（即 ANSI 转义序列），这对于我们的项目进行是必需的。如果你可以自行配置使得 Conhost 也支持 ANSI 转义序列，那么也可以。</p>
+</details>
+<details class="question" open="open">
+<summary>终端和 Shell 有什么区别？</summary>
+<p>终端和 Shell 是两个往往相伴出现而实际上不同的概念。简言之，终端是帮助我们与 Shell 交互的可视化应用程序，Shell 则是系统对外提供的外壳/接口。使用更好的终端可以极大地提升我们在 Shell 环境内操作的体验。</p>
+<p>欲了解更多背景知识，请访问这个<a href="https://www.zhihu.com/question/21711307/answer/2231006377">帖子</a>。</p>
+</details>
+<p>打开 Windows 终端，在标签页下拉菜单中选择设置，点击添加新配置文件。</p>
+<p>在名称中输入 <code>MSYS2</code>，在命令行一栏中输入：</p>
+<div class="highlight"><pre><span></span><code>$MSYS2_PATH\msys2_shell.cmd -defterm -no-start -use-full-path -here -msys2
+</code></pre></div>
+<p>并在图标一栏中选择：</p>
+<div class="highlight"><pre><span></span><code>$MSYS2_PATH\msys2.ico
+</code></pre></div>
+<p>然后在选项卡标题中输入 MSYS2，保存配置文件即可。</p>
+<p>其他选项可以按需设置，也可将 MSYS2 设定为 Windows 终端的默认配置。</p>
+<p>如果你配置成功了，你将可以在 Windows 终端上的下拉菜单中看到 MSYS2 的选项：</p>
+<p><img alt="Windows 终端中的 MSYS2 示例图片" src="../../pics/quickstart_msys2_in_windows_terminal.png" /></p>
+<p>我们十分建议你将 MSYS2 在「设置-启动」中<strong>设置为默认配置文件</strong>，并建议你在非集成环境下均使用 Windows 终端进入 MSYS2 Shell 环境。</p>
+<details class="question" open="open">
+<summary><code>-msys2</code> 是什么意思，还可以启动其它环境吗？</summary>
+<p>如果你改为 <code>-mingw64</code>，那么该命令将启动 MINGW64 环境，它和默认的 MSYS2 环境没有大的区别，但是它更优先启动 <code>/mingw64/bin/</code> 下的程序。</p>
+<p>想知道这是怎么做到的？在两个环境分别执行 <code>echo $PATH</code> 试试。</p>
+</details>
+<h3 id="将-msys2-配置到-vscode-终端">将 MSYS2 配置到 VSCode 终端<a class="headerlink" href="#将-msys2-配置到-vscode-终端" title="Permanent link">&para;</a></h3>
+<p>VSCode 是目前一款十分流行的编辑器。从<a href="https://code.visualstudio.com/">这里</a>下载 VSCode。</p>
+<p>（不要从国内某些奇怪的收费源处安装啊 kora）</p>
+<p>VSCode 作为 GUI 应用，其使用是相当容易学会的，有不解之处可以查看<a href="https://code.visualstudio.com/docs">官方文档</a>。</p>
+<p><del>（编辑器，那不就是记事本吗？）</del></p>
+<p>按 <code>Ctrl+`</code> 或者用鼠标唤出终端，我们发现其中并没有 MSYS2 的 Shell 可供选择。</p>
+<p>于是我们需要用 VSCode 的配置功能添加新的 MSYS2 环境。</p>
+<p>按 <code>Ctrl + Shift + P</code> 打开控制面板，输入 Preferences: Open User Settings (JSON)，回车。</p>
+<p>在出现的文件中加上这样一段：</p>
+<div class="highlight"><pre><span></span><code><span class="nt">&quot;terminal.integrated.profiles.windows&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="nt">&quot;PowerShell&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+<span class="w">        </span><span class="nt">&quot;source&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;PowerShell&quot;</span><span class="p">,</span>
+<span class="w">        </span><span class="nt">&quot;icon&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;terminal-powershell&quot;</span>
+<span class="w">    </span><span class="p">},</span>
+<span class="w">    </span><span class="nt">&quot;Command Prompt&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+<span class="w">        </span><span class="nt">&quot;path&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span>
+<span class="w">            </span><span class="s2">&quot;${env:windir}\\Sysnative\\cmd.exe&quot;</span><span class="p">,</span>
+<span class="w">            </span><span class="s2">&quot;${env:windir}\\System32\\cmd.exe&quot;</span>
+<span class="w">        </span><span class="p">],</span>
+<span class="w">        </span><span class="nt">&quot;args&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[],</span>
+<span class="w">        </span><span class="nt">&quot;icon&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;terminal-cmd&quot;</span>
+<span class="w">    </span><span class="p">},</span>
+<span class="w">    </span><span class="nt">&quot;msys2-msys2&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+<span class="w">        </span><span class="nt">&quot;path&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;$MSYS2_PATH\\msys2_shell.cmd&quot;</span><span class="p">,</span>
+<span class="w">        </span><span class="nt">&quot;args&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span>
+<span class="w">            </span><span class="s2">&quot;-defterm&quot;</span><span class="p">,</span>
+<span class="w">            </span><span class="s2">&quot;-use-full-path&quot;</span><span class="p">,</span>
+<span class="w">            </span><span class="s2">&quot;-msys2&quot;</span><span class="p">,</span>
+<span class="w">            </span><span class="s2">&quot;-no-start&quot;</span><span class="p">,</span>
+<span class="w">            </span><span class="s2">&quot;-here&quot;</span>
+<span class="w">        </span><span class="p">]</span>
+<span class="w">    </span><span class="p">},</span>
+<span class="p">}</span>
+</code></pre></div>
+<p>注意上面的 <code>MSYS_PATH</code> 替换时路径要使用<strong>双反斜杠</strong>。</p>
+<p>在你配置成功后，你同样可以在 VSCode 集成终端中类似 Windows 终端的下拉菜单找到 MSYS2 Shell 环境，我们同样建议你将其设为默认。</p>
+<div class="admonition tip">
+<p class="admonition-title">为 settings.json 添加属性</p>
+<p>上面要求你添加的内容其实是 JSON 配置「顶级对象」的一个属性（即 <code>"something": {...}</code>）。</p>
+<p>如果你的 JSON 里没有任何内容，你应该在上述内容的外层再添加一对大括号表示「顶级」对象。</p>
+<p>如果你的 JSON 里已经存在有内容，那么最外层的大括号就是「顶级对象」，请你在它内部的最后一个属性结束处加上一个<strong>英文逗号</strong>（如果原来没有的话），并在其后加上上面的这段。</p>
+</div>
+<details class="question" open="open">
+<summary>为什么要用双反斜杠？</summary>
+<p>Windows 默认的路径符号是反斜杠，但在 JSON 字符串里，这是特殊字符（<a href="https://zh.wikipedia.org/zh-cn/%E8%BD%AC%E4%B9%89%E5%AD%97%E7%AC%A6">转义字符</a>），需要再用一个反斜杠转义后才是「真正」的反斜杠。</p>
+</details>
+<details class="question" open="open">
+<summary>什么是 JSON？</summary>
+<p>JSON 是一种描述结构化的数据的方式，是结构化数据<a href="https://zh.wikipedia.org/zh-cn/%E5%BA%8F%E5%88%97%E5%8C%96">序列化</a>的产物。VSCode 使用 JSON 来配置自身设置和拓展，从而提供了对人类和对程序都相对友好的统一接口。</p>
+<p>我们可以看到上面的一段 JSON 描述了 VSCode 集成终端可以启动的三种 Shell 环境的具体信息，如启动路径，启动参数，图标等。由于启动方式有多种，部分参数是可选的。</p>
+<p>我们在项目中也会接触到 JSON 格式，所以可以现在查看<a href="https://developer.mozilla.org/zh-CN/docs/Learn/JavaScript/Objects/JSON">此处</a>获取有关于 JSON 的更多信息。</p>
+</details>
+<h3 id="用-pacman-安装工具">用 <code>pacman</code> 安装工具<a class="headerlink" href="#用-pacman-安装工具" title="Permanent link">&para;</a></h3>
+<p>我们接下来安装一些完成课程实验必要的工具：</p>
+<p>在 MSYS2 环境中运行：</p>
+<div class="highlight"><pre><span></span><code>pacman<span class="w"> </span>-S<span class="w"> </span>mingw-w64-x86_64-toolchain<span class="w"> </span>make<span class="w"> </span>git<span class="w"> </span>vim<span class="w"> </span>man
+</code></pre></div>
+<p>以上命令将为你安装 mingw-w64 工具链、自动化构建工具 GNU make、版本控制系统 git、编辑器 Vim、以及文档查询工具 man。</p>
+<p>如果在安装过程中报错了，请检查你的网络环境。如果你确信你的网络环境没有问题，可以使用<a href="https://mirror.nju.edu.cn/mirrorz-help/msys2/?mirror=NJU">南大镜像源</a>。</p>
+<div class="admonition warning">
+<p class="admonition-title">还是报错怎么办？</p>
+<p>见<a href="../#_3">学会解决问题</a>一节。</p>
+</div>
+<p>要检查 mingw-w64 工具链是否安装成功，可以执行以下命令：</p>
+<div class="highlight"><pre><span></span><code>g++<span class="w"> </span>--version
+</code></pre></div>
+<p>对于其他工具同理。</p>
+<div class="admonition info">
+<p class="admonition-title">Linux 用户请注意</p>
+<p>如果你使用 Linux 发行版，请使用该发行版自带的包管理器安装这些软件，注意 mingw 工具链需要换成 <code>g++</code> 和 <code>binutils</code>。</p>
+</div>
+<details class="question" open="open">
+<summary>什么是 pacman/包管理器？</summary>
+<p>pacman 是 MSYS2 内建的包管理器。包管理器的作用类似于「应用商店」，负责处理各种软件（只要官方仓库里有）的安装、卸载、升级、依赖关系处理等。在安装时需要确保和软件源网络畅通，上面已经提供了将软件源更换为南大源的方法（你显然更易访问到它）。</p>
+</details>
+<details class="question" open="open">
+<summary>什么是 Vim？</summary>
+<p>Vim 是一个命令行文件编辑器。它可以完全不依赖鼠标和 GUI 而运作，仅靠键盘快捷键实现光标跳转、模式切换、复制粘贴、查找替换等功能。同时，受益于 Vim 内建的 Vimscript 为交互语言的接口，用户可通过 <code>.vimrc</code> 为 Vim 配置自定义配置和功能强大的插件。</p>
+<p>Neovim 是 Vim 的一个重构版本，致力于成为 Vim 的超集，它完全兼容 Vim 的各种配置，并可以使用 Lua 这种通用程序设计语言进行配置调整和插件开发。</p>
+</details>
+<details class="question" open="open">
+<summary>为什么有的软件包名字前面有一大串前缀，有的没有？</summary>
+<p>有 mingw 前缀的是使用 mingw 构建的软件包，没有的则是 cygwin 环境下才可以运行的软件包。</p>
+</details>
+<h2 id="上手实验">上手实验<a class="headerlink" href="#上手实验" title="Permanent link">&para;</a></h2>
+<h3 id="编译和运行程序">编译和运行程序<a class="headerlink" href="#编译和运行程序" title="Permanent link">&para;</a></h3>
+<p>接下来我们来学习如何使用 Unix shell 环境编译和运行程序。顺便借机熟悉一下 Unix shell 以及其包含的若干命令行工具的使用。</p>
+<p>在 Windows 终端中打开 MSYS2 Shell，输入 <code>cd ~</code> 将目录切换至自己的家目录。</p>
+<details class="question" open="open">
+<summary>这是在干什么？</summary>
+<p>当你打开 shell 时，它总在文件系统的某个特定目录工作，使用 <code>pwd</code> 即可看到自己所在的目录，<code>~</code> 是家目录的缩写，你的家目录一般是 <code>/home/$Username</code>，使用 <code>realpath ~</code> 以得到家目录的真实路径名。<br /></p>
+<p>上文要求你输入的命令即是将你当前的工作目录切换至你的家目录，以便于后续新建程序。</p>
+</details>
+<details class="question" open="open">
+<summary>如何获取帮助？</summary>
+<p>讲义不可能事无巨细地讲述每个命令，因此获取离线或联机帮助是必须的。在遇到不懂的命令时，你当然可以求助于搜索引擎以获取有关于该命令的信息。不过，使用 Shell 内建的 <code>help</code> 或 <code>man</code> 命令可以帮助你得到命令的信息。<br /></p>
+<p>试试键入 <code>help cd</code> 或 <code>man pwd</code>。</p>
+<p>如果你使用 Linux 发行版，可以试试安装 <code>tldr</code> 来获取更加简单的提示。</p>
+<p>如果你可以访问大语言模型聊天机器人，那么也可以试试向它提问。</p>
+</details>
+<p>输入 <code>vim hello.cpp</code>，进入 Vim 编辑页面。</p>
+<div class="admonition tip">
+<p class="admonition-title">在进入 Vim 之前</p>
+<p>你可能会问：等等，我还不会使用 Vim 呢！</p>
+<p>在使用上述命令之前，试试在终端中键入 <code>vimtutor</code>，在接下来出现的界面中你将学会 vim 的基本操作。</p>
+<p>注意：不必将教程进行到最后，学习到能编辑并保存一个文件即可。</p>
+</div>
+<p>在 <code>vim</code> 界面中按下 <code>i</code> 进入编辑模式并键入一段代码：</p>
+<div class="highlight"><pre><span></span><code><span class="cp">#include</span><span class="w"> </span><span class="cpf">&lt;cstdio&gt;</span>
+<span class="kt">int</span><span class="w"> </span><span class="nf">main</span><span class="p">()</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="n">puts</span><span class="p">(</span><span class="s">&quot;Hello, Problem Solving!&quot;</span><span class="p">);</span>
+<span class="w">    </span><span class="k">return</span><span class="w"> </span><span class="mi">0</span><span class="p">;</span>
+<span class="p">}</span>
+</code></pre></div>
+<p>点击 <code>Esc</code>，输入 <code>:wq</code> 保存文件并退出。</p>
+<div class="admonition warning">
+<p class="admonition-title">你是否跳过了学习 Vim 的使用？</p>
+<p>如果你没有去学习 Vim 的基本操作而直接按照讲义给的详细操作说明完成了刚刚的步骤，那么值得提醒的是：提供如此详细的操作说明并不是讲义的义务。在你们未来可能修读的《计算机系统基础》的课程中，遑论如此基础直接的操作，就算是一个实验任务，你所能得到的也只是几句模棱两可的指导。</p>
+<p><em>我翻遍整个实验讲义一查，这讲义没有操作说明，歪歪斜斜的每页上都写着「STFW、RTFM、RTFSC」几个缩写。我横竖睡不着，仔细看了半夜，才从字缝里看出字来，满本都写着一句话「<a href="https://github.com/tangx/Stop-Ask-Questions-The-Stupid-Ways/blob/master/README.md">别像弱智一样提问</a>」！</em></p>
+<p><div style="text-align:right">——《PA 日记》</div></p>
+</div>
+<p>接下来再输入：<code>g++ hello.cpp -o hello; ./hello</code>。</p>
+<p>如果一切顺利，屏幕上将出现 <code>Hello, Problem Solving!</code>。</p>
+<p>恭喜你，第一次通过命令行编译并运行了一段 C++ 程序！ <del>（但我相信你们很多人早就不是第一次了）</del></p>
+<details class="note" open="open">
+<summary>进一步学习 GCC 的使用</summary>
+<p>刚刚编译程序使用的是 GNU Compiler Collection (GCC) 套件的一部分（如果你使用的是 MSYS2 环境，那么你使用的是 GCC 的 mingw-w64 版本）。</p>
+<p><code>g++</code> 是 GCC 中的一个强大的 C++ 编译器。若想获取更多 <code>g++</code> 的使用方法，试试键入 <code>man g++</code>。 </p>
+</details>
+<details class="question" open="open">
+<summary>我觉得 Vim 太陈旧了。可以用现代的编辑器吗？</summary>
+<p>事实上，使用 VSCode 代替 Vim 作为编辑器，并使用 VSCode 的内建终端也可以完成上述操作。</p>
+<p>至于使用 VSCode 还是 Vim 作为你们的日常编辑环境，这就见仁见智了。大家可以自行选择。</p>
+<p>但我们不推荐使用过于傻瓜式的插件（如 Code Runner），至少你需要知道它的原理之后再使用。</p>
+<p><em>另外，Vim 并不陈旧。在各种插件加持下，它往往还能超过现代编辑器的使用体验，但它的学习成本确实很高。</em></p>
+</details>
+<details class="note" open="open">
+<summary>进一步学习 Unix Shell 的使用</summary>
+<p>本版所描述的只是最简略的上手指南，如果想真正入门 Unix Shell 的使用，可以学习以下两个教程。</p>
+<ul>
+<li><a href="https://nju-projectn.github.io/ics-pa-gitbook/ics2022/linux.html">PA 讲义中的 GNU/Linux 入门教程</a>。</li>
+<li><a href="https://missing-semester-cn.github.io/">MIT Missing Semester（强烈推荐）</a>。</li>
+</ul>
+<p>你不必学完教程的全部部分，有时只需学完教程的开始一小节就可以胜任实验所要求的任务。如果你在教程中遇到了短时间内搞不明白且不影响实验进度的问题，记住<a href="../#_3">「过犹不及」</a>，也许现在并不是学习它们的时候。</p>
+</details>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+    <div class="md-copyright__highlight">
+      Copyright &copy; 2024 Problem-Solving (2024) TA Team
+    </div>
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      <script id="__config" type="application/json">{"base": "../..", "features": ["navigation.tabs", "navigation.tabs.sticky", "navigation.indexes", "content.tooltips"], "search": "../../assets/javascripts/workers/search.973d3a69.min.js", "tags": null, "translations": {"clipboard.copied": "\u5df2\u590d\u5236", "clipboard.copy": "\u590d\u5236", "search.result.more.one": "\u5728\u8be5\u9875\u4e0a\u8fd8\u6709 1 \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.more.other": "\u5728\u8be5\u9875\u4e0a\u8fd8\u6709 # \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.none": "\u6ca1\u6709\u627e\u5230\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.one": "\u627e\u5230 1 \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.other": "# \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.placeholder": "\u952e\u5165\u4ee5\u5f00\u59cb\u641c\u7d22", "search.result.term.missing": "\u7f3a\u5c11", "select.version": "\u9009\u62e9\u5f53\u524d\u7248\u672c"}, "version": null}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.f55a23d4.min.js"></script>
+      
+        <script src="../../javascripts/config.js"></script>
+      
+        <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+      
+        <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
+      
+    
+  </body>
+</html>
